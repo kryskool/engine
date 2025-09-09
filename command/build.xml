@@ -73,7 +73,7 @@
 	</target>
 
 	<path id="jacoco.classpath">
-		<fileset dir="/Users/wengmark/mirthdev/mirth450/connect/server/lib/ant">
+		<fileset dir="lib/ant">
 			<include name="org.jacoco.ant-0.8.8.jar"/>
 			<include name="org.jacoco.core-0.8.8.jar"/>
 			<include name="org.jacoco.report-0.8.8.jar"/>
