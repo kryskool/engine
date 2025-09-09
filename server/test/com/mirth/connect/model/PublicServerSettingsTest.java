@@ -44,8 +44,8 @@ public class PublicServerSettingsTest {
         serverSettings.setDefaultMetaDataColumns(null);
         serverSettings.setQueueBufferSize(1000);
         COLUMNS = new ArrayList<MetaDataColumn>();
-        COLUMNS.add(new MetaDataColumn("SOURCE", MetaDataColumnType.STRING, "message_source"));
-        COLUMNS.add(new MetaDataColumn("TYPE", MetaDataColumnType.STRING, "message_type"));
+        COLUMNS.add(new MetaDataColumn("SOURCE", MetaDataColumnType.STRING, "mirth_source"));
+        COLUMNS.add(new MetaDataColumn("TYPE", MetaDataColumnType.STRING, "mirth_type"));
         
     }
     
