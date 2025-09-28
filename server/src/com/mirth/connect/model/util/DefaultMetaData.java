@@ -40,5 +40,4 @@ public class DefaultMetaData {
         DEFAULT_COLUMNS.add(SOURCE_COLUMN);
         DEFAULT_COLUMNS.add(TYPE_COLUMN);
     }
-
 }

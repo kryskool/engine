@@ -139,7 +139,6 @@ public class TcpDispatcherTest {
 	}
 	
 	private TcpDispatcher createTcpDispatcher(TcpDispatcherProperties dispatcherProps) {
-
 		TcpDispatcher dispatcher = new TestTcpDispatcher(TEST_CHANNEL_ID, TEST_SERVER_ID, 1, dispatcherProps);
 		dispatcher.setChannelId(TEST_CHANNEL_ID);
 		
@@ -177,7 +176,6 @@ public class TcpDispatcherTest {
         
         assertEquals(TEST_MESSAGE_TEMPLATE, socketResult.get("result" + socketListenerId));
 	}
-
 	
 	/*
 	 * testMLLPMessageSent()

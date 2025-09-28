@@ -108,6 +108,7 @@ donkey/donkey-src
 donkey/donkey-test
 .sonar
 **/junit-reports
+**/junit-html
 **/code-coverage-reports
 
 # /client/
