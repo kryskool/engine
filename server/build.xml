@@ -228,9 +228,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${connectors.http}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/http" />
-		</copy>
 		<jar destfile="${connectors.http}/http-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/connectors/http/HttpReceiverProperties.class" />
 			<include name="com/mirth/connect/connectors/http/HttpDispatcherProperties.class" />
@@ -255,9 +252,6 @@
 			<fileset dir="${src}/com/mirth/connect/connectors/jdbc">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${connectors.jdbc}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/jdbc" />
 		</copy>
 		<jar destfile="${connectors.jdbc}/jdbc-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/connectors/jdbc/DatabaseReceiverProperties.class" />
@@ -286,9 +280,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${connectors.jms}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/jms" />
-		</copy>
 		<jar destfile="${connectors.jms}/jms-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/connectors/jms/JmsConnectorProperties.class" />
 			<include name="com/mirth/connect/connectors/jms/JmsReceiverProperties.class" />
@@ -312,9 +303,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${connectors.js}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/js" />
-		</copy>
 		<jar destfile="${connectors.js}/js-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/connectors/js/JavaScriptReceiverProperties.class" />
 			<include name="com/mirth/connect/connectors/js/JavaScriptDispatcherProperties.class" />
@@ -333,9 +321,6 @@
 			<fileset dir="${src}/com/mirth/connect/connectors/smtp">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${connectors.smtp}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/smtp" />
 		</copy>
 		<jar destfile="${connectors.smtp}/smtp-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/connectors/smtp/SmtpDispatcherProperties.class" />
@@ -358,9 +343,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${connectors.tcp}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/tcp" />
-		</copy>
 		<jar destfile="${connectors.tcp}/tcp-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/connectors/tcp/TcpReceiverProperties.class" />
 			<include name="com/mirth/connect/connectors/tcp/TcpDispatcherProperties.class" />
@@ -381,9 +363,6 @@
 			<fileset dir="${src}/com/mirth/connect/connectors/vm">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${connectors.vm}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/vm" />
 		</copy>
 		<jar destfile="${connectors.vm}/vm-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/connectors/vm/VmReceiverProperties.class" />
@@ -443,9 +422,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${plugins.datatype-delimited}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/datatypes/delimited" />
-		</copy>
 		<jar destfile="${plugins.datatype-delimited}/datatype-delimited-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/datatypes/delimited/**" />
 			<exclude name="com/mirth/connect/plugins/datatypes/delimited/DelimitedDataTypeServerPlugin.class" />
@@ -465,9 +441,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${plugins.datatype-dicom}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/datatypes/dicom" />
-		</copy>
 		<jar destfile="${plugins.datatype-dicom}/datatype-dicom-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/datatypes/dicom/**" />
 			<exclude name="com/mirth/connect/plugins/datatypes/dicom/DICOMDataTypeServerPlugin.class" />
@@ -483,9 +456,6 @@
 			<fileset dir="${src}/com/mirth/connect/plugins/datatypes/edi">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${plugins.datatype-edi}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/datatypes/edi" />
 		</copy>
 		<!-- copy the xml files so they will be included in jar -->
 		<copy todir="${classes}/com/mirth/connect/plugins/datatypes/edi/xml">
@@ -506,9 +476,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${plugins.datatype-hl7v2}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/datatypes/hl7v2" />
-		</copy>
 		<jar destfile="${plugins.datatype-hl7v2}/datatype-hl7v2-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/datatypes/hl7v2/**" />
 			<exclude name="com/mirth/connect/plugins/datatypes/hl7v2/HL7v2DataTypeServerPlugin.class" />
@@ -526,9 +493,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${plugins.datatype-hl7v3}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/datatypes/hl7v3" />
-		</copy>
 		<jar destfile="${plugins.datatype-hl7v3}/datatype-hl7v3-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/datatypes/hl7v3/**" />
 			<exclude name="com/mirth/connect/plugins/datatypes/hl7v3/HL7V3DataTypeServerPlugin.class" />
@@ -543,9 +507,6 @@
 			<fileset dir="${src}/com/mirth/connect/plugins/datatypes/ncpdp">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${plugins.datatype-ncpdp}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/datatypes/ncpdp" />
 		</copy>
 		<jar destfile="${plugins.datatype-ncpdp}/datatype-ncpdp-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/datatypes/ncpdp/**" />
@@ -562,9 +523,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${plugins.datatype-xml}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/datatypes/xml" />
-		</copy>
 		<jar destfile="${plugins.datatype-xml}/datatype-xml-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/datatypes/xml/**" />
 			<exclude name="com/mirth/connect/plugins/datatypes/xml/XMLDataTypeServerPlugin.class" />
@@ -579,9 +537,6 @@
 			<fileset dir="${src}/com/mirth/connect/plugins/datatypes/raw">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${plugins.datatype-raw}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/datatypes/raw" />
 		</copy>
 		<jar destfile="${plugins.datatype-raw}/datatype-raw-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/datatypes/raw/**" />
@@ -598,9 +553,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${plugins.datatype-json}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/datatypes/json" />
-		</copy>
 		<jar destfile="${plugins.datatype-json}/datatype-json-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/datatypes/json/**" />
 			<exclude name="com/mirth/connect/plugins/datatypes/json/JSONDataTypeServerPlugin.class" />
@@ -615,9 +567,6 @@
 			<fileset dir="${src}/com/mirth/connect/plugins/directoryresource">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${plugins.directoryresource}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/directoryresource" />
 		</copy>
 		<jar destfile="${plugins.directoryresource}/directoryresource-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/directoryresource/DirectoryResourceProperties.class" />
@@ -636,9 +585,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${plugins.dashboardstatus}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/dashboardstatus" />
-		</copy>
 		<jar destfile="${plugins.dashboardstatus}/dashboardstatus-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/dashboardstatus/ConnectionLogItem.class" />
 			<include name="com/mirth/connect/plugins/dashboardstatus/DashboardConnectorStatusServletInterface.class" />
@@ -655,9 +601,6 @@
 			<fileset dir="${src}/com/mirth/connect/plugins/destinationsetfilter">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${plugins.destinationsetfilter}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/destinationsetfilter" />
 		</copy>
 		<jar destfile="${plugins.destinationsetfilter}/destinationsetfilter-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/destinationsetfilter/DestinationSetFilterStep.class" />
@@ -683,9 +626,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${plugins.globalmapviewer}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/globalmapviewer" />
-		</copy>
 		<jar destfile="${plugins.globalmapviewer}/globalmapviewer-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/globalmapviewer/GlobalMapServletInterface.class" />
 		</jar>
@@ -700,9 +640,6 @@
 			<fileset dir="${src}/com/mirth/connect/plugins/httpauth">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${plugins.httpauth}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/httpauth" />
 		</copy>
 		<jar destfile="${plugins.httpauth}/httpauth-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/httpauth/HttpAuthConnectorPluginProperties.class" />
@@ -742,9 +679,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${plugins.imageviewer}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/imageviewer" />
-		</copy>
 
 		<!-- plugins.javascriptrule -->
 		<mkdir dir="${plugins.javascriptrule}" />
@@ -752,9 +686,6 @@
 			<fileset dir="${src}/com/mirth/connect/plugins/javascriptrule">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${plugins.javascriptrule}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/javascriptrule" />
 		</copy>
 		<jar destfile="${plugins.javascriptrule}/javascriptrule-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/javascriptrule/JavaScriptRule.class" />
@@ -767,9 +698,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${plugins.javascriptstep}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/javascriptstep" />
-		</copy>
 		<jar destfile="${plugins.javascriptstep}/javascriptstep-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/javascriptstep/JavaScriptStep.class" />
 		</jar>
@@ -780,9 +708,6 @@
 			<fileset dir="${src}/com/mirth/connect/plugins/mapper">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${plugins.mapper}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/mapper" />
 		</copy>
 		<jar destfile="${plugins.mapper}/mapper-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/mapper/MapperStep.class" />
@@ -796,9 +721,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${plugins.messagebuilder}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/messagebuilder" />
-		</copy>
 		<jar destfile="${plugins.messagebuilder}/messagebuilder-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/messagebuilder/MessageBuilderStep.class" />
 		</jar>
@@ -809,9 +731,6 @@
 			<fileset dir="${src}/com/mirth/connect/plugins/datapruner">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${plugins.datapruner}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/datapruner" />
 		</copy>
 		<jar destfile="${plugins.datapruner}/datapruner-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/datapruner/DataPrunerServletInterface.class" />
@@ -827,9 +746,6 @@
 			<fileset dir="${src}/com/mirth/connect/plugins/mllpmode">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${plugins.mllpmode}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/mllpmode" />
 		</copy>
 		<jar destfile="${plugins.mllpmode}/mllpmode-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/mllpmode/MLLPModeProperties.class" />
@@ -857,9 +773,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${plugins.textviewer}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/textviewer" />
-		</copy>
 
 		<!-- plugins.rulebuilder -->
 		<mkdir dir="${plugins.rulebuilder}" />
@@ -867,9 +780,6 @@
 			<fileset dir="${src}/com/mirth/connect/plugins/rulebuilder">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${plugins.rulebuilder}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/rulebuilder" />
 		</copy>
 		<jar destfile="${plugins.rulebuilder}/rulebuilder-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/rulebuilder/RuleBuilderRule.class" />
@@ -882,9 +792,6 @@
 			<fileset dir="${src}/com/mirth/connect/plugins/serverlog">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${plugins.serverlog}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/serverlog" />
 		</copy>
 		<jar destfile="${plugins.serverlog}/serverlog-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/serverlog/ServerLogItem.class" />
@@ -903,9 +810,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${plugins.scriptfilerule}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/scriptfilerule" />
-		</copy>
 		<jar destfile="${plugins.scriptfilerule}/scriptfilerule-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/scriptfilerule/ExternalScriptRule.class" />
 		</jar>
@@ -917,9 +821,6 @@
 				<include name="*.xml" />
 			</fileset>
 		</copy>
-		<copy todir="${plugins.scriptfilestep}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/scriptfilestep" />
-		</copy>
 		<jar destfile="${plugins.scriptfilestep}/scriptfilestep-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/scriptfilestep/ExternalScriptStep.class" />
 		</jar>
@@ -930,9 +831,6 @@
 			<fileset dir="${src}/com/mirth/connect/plugins/xsltstep">
 				<include name="*.xml" />
 			</fileset>
-		</copy>
-		<copy todir="${plugins.xsltstep}/lib" failonerror="false">
-			<fileset dir="${lib.extensions}/xsltstep" />
 		</copy>
 		<jar destfile="${plugins.xsltstep}/xsltstep-shared.jar" basedir="${classes}">
 			<include name="com/mirth/connect/plugins/xsltstep/XsltStep.class" />
