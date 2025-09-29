@@ -98,7 +98,6 @@
 			<junit haltonfailure="false" fork="true" forkmode="once">
 				<jvmarg value="-Xms128m" />
 				<jvmarg value="-Xmx2048m" />
-				<jvmarg value="--add-opens=java.base/sun.misc=ALL-UNNAMED"/>
 				<jvmarg value="--add-opens=java.base/jdk.internal.misc=ALL-UNNAMED"/>
 				<jvmarg value="--add-opens=java.sql.rowset/com.sun.rowset=ALL-UNNAMED"/>
 				<jvmarg value="--add-opens=java.sql.rowset/com.sun.rowset.internal=ALL-UNNAMED"/>

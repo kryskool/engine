@@ -1322,7 +1322,6 @@
 				<jvmarg value="--add-opens=java.desktop/java.awt.font=ALL-UNNAMED" />
 				<jvmarg value="--add-opens=java.xml/com.sun.org.apache.xalan.internal.xsltc.trax=ALL-UNNAMED" />
 				<jvmarg value="--add-exports=java.base/com.sun.crypto.provider=ALL-UNNAMED" />
-				<jvmarg value="--add-opens=java.base/sun.misc=ALL-UNNAMED"/>
 				<jvmarg value="--add-opens=java.base/jdk.internal.misc=ALL-UNNAMED"/>
 				<jvmarg value="--add-opens=java.sql.rowset/com.sun.rowset=ALL-UNNAMED"/>
 				<jvmarg value="--add-opens=java.sql.rowset/com.sun.rowset.internal=ALL-UNNAMED"/>
