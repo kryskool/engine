@@ -100,12 +100,6 @@
 				<jvmarg value="-Xmx2048m" />
 				<!-- https://stackoverflow.com/questions/54205486 -->
 				<jvmarg value="-Xshare:off" />
-				<jvmarg value="--add-opens=java.base/jdk.internal.misc=ALL-UNNAMED"/>
-				<jvmarg value="--add-opens=java.sql.rowset/com.sun.rowset=ALL-UNNAMED"/>
-				<jvmarg value="--add-opens=java.sql.rowset/com.sun.rowset.internal=ALL-UNNAMED"/>
-				<jvmarg value="--add-opens=java.sql.rowset/com.sun.rowset.providers=ALL-UNNAMED"/>
-				<jvmarg value="--add-opens=java.sql.rowset/javax.sql.rowset=ALL-UNNAMED"/>
-				<jvmarg value="--add-opens=java.sql/java.sql=ALL-UNNAMED"/>
 				<classpath>
 					<path refid="testclasspath" />
 					<dirset dir="${test_classes}"/>

@@ -1103,10 +1103,8 @@
 
 	<target name="create-derby-db" depends="compile">
 		<!-- re-create the embedded database -->
-		<delete dir="appdata/mirthdb" />
+		<delete dir="mirthdb" />
 		<java classname="com.mirth.connect.server.tools.ScriptRunner" fork="true" dir="${basedir}" failonerror="true">
-			<!-- Set Derby home so it creates mirthdb inside appdata -->
-			<jvmarg value="-Dderby.system.home=appdata" />
 			<classpath>
 				<pathelement location="${setup.server.lib}/${server.jar}" />
 				<pathelement location="classes" />

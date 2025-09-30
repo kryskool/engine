@@ -57,7 +57,7 @@ public class PublicServerSettingsTest {
     
     @Test
     public void queueBufferSizeTest() {
-        com.mirth.connect.model.PublicServerSettings publicServerSettings = new com.mirth.connect.model.PublicServerSettings(serverSettings);
+        PublicServerSettings publicServerSettings = new PublicServerSettings(serverSettings);
         assertTrue(1000 == publicServerSettings.getQueueBufferSize());
     }
     
